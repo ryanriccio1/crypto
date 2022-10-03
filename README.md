@@ -5,7 +5,9 @@ This is a commandline tool that allows for cryptographic analysis of a few types
 Running is simple:
 `python crypto.py -h`
 
-This will build the C++ extensions as well as give you info about commandline usage.
+This will build the C++ extensions using pybind11 as well as give you info about commandline usage. 
+
+You can also build manually using: `python setup.py build_ext`
 
 ```
 usage: crypto.py [-h] -m {MODE} -a {ALGORITHM} [-k KEY] [-t TEXT] [-f FILE] [-o OUTPUT] [-sT] [-r ROTORS]
